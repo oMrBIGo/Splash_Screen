@@ -50,8 +50,8 @@ public class SplashActivity extends AppCompatActivity {
 
     }
 
-    public void startProgress(){
-        for (value = 0; value <= 99; value = value+1){
+    public void startProgress() {
+        for (value = 0; value <= 99; value = value + 1) {
             try {
                 Thread.sleep(50);
                 progressBar.setProgress(value);
@@ -61,10 +61,11 @@ public class SplashActivity extends AppCompatActivity {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    valueText.setText(String.valueOf(value +"%"));
+                    valueText.setText(String.valueOf(value + "%"));
                 }
             });
-        } startActivity(new Intent(SplashActivity.this, MainActivity.class));
+        }
+        startActivity(new Intent(SplashActivity.this, MainActivity.class));
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
     }
@@ -78,7 +79,7 @@ public class SplashActivity extends AppCompatActivity {
         decorView.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
             @Override
             public void onSystemUiVisibilityChange(int visibility) {
-                if((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
+                if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0) {
                     decorView.setSystemUiVisibility(flags);
                 }
             }

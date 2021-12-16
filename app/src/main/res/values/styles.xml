@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
-        <item name="colorPrimary"></item>
-        <item name="colorPrimaryDark"></item>
-        <item name="colorAccent"></item>
+        <item name="colorPrimary">#8FD29C</item>
+        <item name="colorPrimaryDark">#8FD29C</item>
+        <item name="colorAccent">#8FD29C</item>
     </style>
 </resources>
